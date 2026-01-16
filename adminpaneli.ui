@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>439</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLineEdit" name="kullaniciadi_line">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>341</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+    background: rgba(255,255,255,20);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,60);
+
+    selection-background-color: rgba(80,140,255,180);
+
+    font-size: 14px;
+}
+
+/* Placeholder rengi */
+QLineEdit::placeholder{
+    color: rgba(255,255,255,120);
+}
+
+/* Üzerine tıklanınca */
+QLineEdit:focus{
+    background: rgba(255,255,255,35);
+    border: 1px solid rgb(120,170,255);
+}
+
+/* Disabled görünümü (gerekirse) */
+QLineEdit:disabled{
+    color: rgba(255,255,255,80);
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="sifre_line">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>90</y>
+     <width>341</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+    background: rgba(255,255,255,20);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,60);
+
+    selection-background-color: rgba(80,140,255,180);
+
+    font-size: 14px;
+}
+
+/* Placeholder rengi */
+QLineEdit::placeholder{
+    color: rgba(255,255,255,120);
+}
+
+/* Üzerine tıklanınca */
+QLineEdit:focus{
+    background: rgba(255,255,255,35);
+    border: 1px solid rgb(120,170,255);
+}
+
+/* Disabled görünümü (gerekirse) */
+QLineEdit:disabled{
+    color: rgba(255,255,255,80);
+}
+</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::EchoMode::Password</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="giris_button">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>170</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: #3F5BD8;        /* soft mavi */
+    color: white;
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-size: 14px;
+    border: 1px solid rgba(255,255,255,0.08);
+    font-weight: 500;
+}
+
+QPushButton:hover{
+    background-color: #4E6CFF;        /* hover = biraz parlak */
+    border: 1px solid rgba(255,255,255,0.18);
+}
+
+QPushButton:pressed{
+    background-color: #344AC0;        /* basılı = biraz koyu */
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+QPushButton:disabled{
+    background-color: #2E3A6C;
+    color: #9AA4CC;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Giriş Yap</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

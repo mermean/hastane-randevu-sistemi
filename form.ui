@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModality::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>418</width>
+    <height>249</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>30</y>
+      <width>241</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+    background-color: #0a36a6;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 14px;
+    border: 1px solid #4c7dff;
+}
+
+QPushButton:hover{
+    background-color: #1a4cff;
+}
+
+QPushButton:pressed{
+    background-color: #062885;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>ADMİN</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+    background-color: rgba(255,255,255,28);
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,60);
+}
+
+QPushButton:hover{
+    background-color: rgba(255,255,255,60);
+}
+
+QPushButton:pressed{
+    background-color: rgba(255,255,255,100);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>RANDEVU OLUŞTUR</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>418</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

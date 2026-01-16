@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>793</width>
+    <height>454</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>0</y>
+     <width>311</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #a8b7ff;
+    font-size: 25px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Hasta bilgilerini giriniz.</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="adsoyad_line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background: rgba(20, 30, 60, 0.6);
+    color: #d6e0ff;
+    border: 1px solid #2a3c63;
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+/* Placeholder rengi */
+QLineEdit[echoMode=&quot;0&quot;] {
+    color: #9aa8d4;
+}
+
+/* Focus olduğunda */
+QLineEdit:focus {
+    border: 1px solid #4d79ff;
+    background: rgba(30, 45, 90, 0.8);
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tc_line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>200</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background: rgba(20, 30, 60, 0.6);
+    color: #d6e0ff;
+    border: 1px solid #2a3c63;
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+/* Placeholder rengi */
+QLineEdit[echoMode=&quot;0&quot;] {
+    color: #9aa8d4;
+}
+
+/* Focus olduğunda */
+QLineEdit:focus {
+    border: 1px solid #4d79ff;
+    background: rgba(30, 45, 90, 0.8);
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dogum_date">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>290</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit {
+    background-color: rgba(15, 23, 41, 0.7);
+    border: 1px solid #2a3c63;
+    border-radius: 8px;
+    padding: 6px 10px;
+    color: #d6e0ff;
+    font-size: 14px;
+}
+
+QDateEdit:hover {
+    border: 1px solid #3c5aa6;
+}
+
+QDateEdit:focus {
+    border: 1px solid #5f8cff;
+    background-color: rgba(20, 30, 60, 0.9);
+}
+
+/* Açılır ok butonu */
+QDateEdit::drop-down {
+    border: none;
+    width: 22px;
+    background-color: transparent;
+}
+
+/* Ok simgesi alanı */
+QDateEdit::down-arrow {
+    image: url(:/qt-project.org/styles/commonstyle/images/arrowdown.png);
+    width: 12px;
+    height: 12px;
+}
+
+/* Takvim popup */
+QCalendarWidget {
+    background-color: #0f1729;
+    border: 1px solid #2a3c63;
+    color: #e3e7ff;
+}
+
+/* Gün başlıkları */
+QCalendarWidget QWidget {
+    alternate-background-color: #13203b;
+}
+
+/* Günler */
+QCalendarWidget QAbstractItemView:enabled {
+    selection-background-color: #3f63c8;
+    selection-color: white;
+    background-color: #0f1729;
+    color: #d6e0ff;
+    outline: 0;
+}
+
+/* Hover efekti */
+QCalendarWidget QAbstractItemView:item:hover {
+    background-color: #243a70;
+}
+
+/* Bugün vurgusu */
+QCalendarWidget QAbstractItemView:item:selected {
+    background-color: #4f7fff;
+    color: white;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cinsiyet_combo">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>380</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* =========================
+   COMBOBOX - MODERN STİL
+   ========================= */
+
+QComboBox {
+    background: rgba(20, 30, 60, 0.6);
+    color: #d6e0ff;
+    border: 1px solid #2a3c63;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+/* Üzerine gelince */
+QComboBox:hover {
+    border: 1px solid #4d79ff;
+}
+
+/* Seçim yaparken (focus) */
+QComboBox:focus {
+    border: 1px solid #6d8cff;
+    background: rgba(30, 45, 90, 0.7);
+}
+
+/* Aşağı ok butonu */
+QComboBox::drop-down {
+    border: none;
+    width: 28px;
+}
+
+/* Ok simgesi alanı */
+QComboBox::down-arrow {
+    image: none;
+    width: 0px;
+    height: 0px;
+    border-left: 6px solid #a8b9ff;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    margin-right: 8px;
+}
+
+/* Açılır liste */
+QComboBox QAbstractItemView {
+    background-color: #0f1729;
+    color: #d6e0ff;
+    border: 1px solid #2a3c63;
+    selection-background-color: #324f9e;
+    selection-color: white;
+    outline: 0;
+}
+
+</string>
+   </property>
+   <item>
+    <property name="text">
+     <string> </string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Erkek</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Kız</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QDateEdit" name="randevu_date">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>110</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit {
+    background-color: rgba(15, 23, 41, 0.7);
+    border: 1px solid #2a3c63;
+    border-radius: 8px;
+    padding: 6px 10px;
+    color: #d6e0ff;
+    font-size: 14px;
+}
+
+QDateEdit:hover {
+    border: 1px solid #3c5aa6;
+}
+
+QDateEdit:focus {
+    border: 1px solid #5f8cff;
+    background-color: rgba(20, 30, 60, 0.9);
+}
+
+/* Açılır ok butonu */
+QDateEdit::drop-down {
+    border: none;
+    width: 22px;
+    background-color: transparent;
+}
+
+/* Ok simgesi alanı */
+QDateEdit::down-arrow {
+    image: url(:/qt-project.org/styles/commonstyle/images/arrowdown.png);
+    width: 12px;
+    height: 12px;
+}
+
+/* Takvim popup */
+QCalendarWidget {
+    background-color: #0f1729;
+    border: 1px solid #2a3c63;
+    color: #e3e7ff;
+}
+
+/* Gün başlıkları */
+QCalendarWidget QWidget {
+    alternate-background-color: #13203b;
+}
+
+/* Günler */
+QCalendarWidget QAbstractItemView:enabled {
+    selection-background-color: #3f63c8;
+    selection-color: white;
+    background-color: #0f1729;
+    color: #d6e0ff;
+    outline: 0;
+}
+
+/* Hover efekti */
+QCalendarWidget QAbstractItemView:item:hover {
+    background-color: #243a70;
+}
+
+/* Bugün vurgusu */
+QCalendarWidget QAbstractItemView:item:selected {
+    background-color: #4f7fff;
+    color: white;
+}
+</string>
+   </property>
+   <property name="minimumDate">
+    <date>
+     <year>2026</year>
+     <month>1</month>
+     <day>3</day>
+    </date>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTimeEdit" name="randevu_time">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>110</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTimeEdit {
+    background-color: rgba(15, 23, 41, 0.7);
+    border: 1px solid #2a3c63;
+    border-radius: 8px;
+    padding: 6px 10px;
+    color: #d6e0ff;
+    font-size: 14px;
+}
+
+QTimeEdit:hover {
+    border: 1px solid #3c5aa6;
+}
+
+QTimeEdit:focus {
+    border: 1px solid #5f8cff;
+    background-color: rgba(20, 30, 60, 0.9);
+}
+
+/* Ok butonları alanı */
+QTimeEdit::up-button,
+QTimeEdit::down-button {
+    background: transparent;
+    border: none;
+    width: 18px;
+}
+
+/* Yukarı ok */
+QTimeEdit::up-arrow {
+    image: url(:/qt-project.org/styles/commonstyle/images/arrowup.png);
+    width: 10px;
+    height: 10px;
+}
+
+/* Aşağı ok */
+QTimeEdit::down-arrow {
+    image: url(:/qt-project.org/styles/commonstyle/images/arrowdown.png);
+    width: 10px;
+    height: 10px;
+}
+
+/* Seçili alan */
+QTimeEdit::section {
+    color: #e5ebff;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="randevu_kayit">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>230</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #324f9e;
+    color: white;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Hover */
+QPushButton:hover {
+    background-color: #3f63c8;
+}
+
+/* Basılı tutarken */
+QPushButton:pressed {
+    background-color: #2a3d78;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Randevu al</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="hastane_combo">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>210</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* =========================
+   COMBOBOX - MODERN STİL
+   ========================= */
+
+QComboBox {
+    background: rgba(20, 30, 60, 0.6);
+    color: #d6e0ff;
+    border: 1px solid #2a3c63;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+/* Üzerine gelince */
+QComboBox:hover {
+    border: 1px solid #4d79ff;
+}
+
+/* Seçim yaparken (focus) */
+QComboBox:focus {
+    border: 1px solid #6d8cff;
+    background: rgba(30, 45, 90, 0.7);
+}
+
+/* Aşağı ok butonu */
+QComboBox::drop-down {
+    border: none;
+    width: 28px;
+}
+
+/* Ok simgesi alanı */
+QComboBox::down-arrow {
+    image: none;
+    width: 0px;
+    height: 0px;
+    border-left: 6px solid #a8b9ff;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    margin-right: 8px;
+}
+
+/* Açılır liste */
+QComboBox QAbstractItemView {
+    background-color: #0f1729;
+    color: #d6e0ff;
+    border: 1px solid #2a3c63;
+    selection-background-color: #324f9e;
+    selection-color: white;
+    outline: 0;
+}
+
+</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="poliklinik_combo">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>290</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* =========================
+   COMBOBOX - MODERN STİL
+   ========================= */
+
+QComboBox {
+    background: rgba(20, 30, 60, 0.6);
+    color: #d6e0ff;
+    border: 1px solid #2a3c63;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+/* Üzerine gelince */
+QComboBox:hover {
+    border: 1px solid #4d79ff;
+}
+
+/* Seçim yaparken (focus) */
+QComboBox:focus {
+    border: 1px solid #6d8cff;
+    background: rgba(30, 45, 90, 0.7);
+}
+
+/* Aşağı ok butonu */
+QComboBox::drop-down {
+    border: none;
+    width: 28px;
+}
+
+/* Ok simgesi alanı */
+QComboBox::down-arrow {
+    image: none;
+    width: 0px;
+    height: 0px;
+    border-left: 6px solid #a8b9ff;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    margin-right: 8px;
+}
+
+/* Açılır liste */
+QComboBox QAbstractItemView {
+    background-color: #0f1729;
+    color: #d6e0ff;
+    border: 1px solid #2a3c63;
+    selection-background-color: #324f9e;
+    selection-color: white;
+    outline: 0;
+}
+
+</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="doktor_combo">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>380</y>
+     <width>271</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* =========================
+   COMBOBOX - MODERN STİL
+   ========================= */
+
+QComboBox {
+    background: rgba(20, 30, 60, 0.6);
+    color: #d6e0ff;
+    border: 1px solid #2a3c63;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+/* Üzerine gelince */
+QComboBox:hover {
+    border: 1px solid #4d79ff;
+}
+
+/* Seçim yaparken (focus) */
+QComboBox:focus {
+    border: 1px solid #6d8cff;
+    background: rgba(30, 45, 90, 0.7);
+}
+
+/* Aşağı ok butonu */
+QComboBox::drop-down {
+    border: none;
+    width: 28px;
+}
+
+/* Ok simgesi alanı */
+QComboBox::down-arrow {
+    image: none;
+    width: 0px;
+    height: 0px;
+    border-left: 6px solid #a8b9ff;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    margin-right: 8px;
+}
+
+/* Açılır liste */
+QComboBox QAbstractItemView {
+    background-color: #0f1729;
+    color: #d6e0ff;
+    border: 1px solid #2a3c63;
+    selection-background-color: #324f9e;
+    selection-color: white;
+    outline: 0;
+}
+
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #a8b7ff;
+    font-size: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Adınız ve soyadınızı giriniz:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #a8b7ff;
+    font-size: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>TC Kimlik numaranızı giriniz:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>330</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #a8b7ff;
+    font-size: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Cinsiyetinizi seçiniz:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>240</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #a8b7ff;
+    font-size: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Doğum Tarihinizi giriniz:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>170</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #a8b7ff;
+    font-size: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Hastane seçiminiz:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>60</y>
+     <width>361</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #a8b7ff;
+    font-size: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Randevu almak istediğiniz tarihi ve saati giriniz </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>260</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #a8b7ff;
+    font-size: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Poliklinik seçiminiz:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>340</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #a8b7ff;
+    font-size: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Doktor seçiminiz:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>140</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #a8b7ff;
+    font-size: 13px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Sadece yarım saatte bir randevu alınabilir.</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

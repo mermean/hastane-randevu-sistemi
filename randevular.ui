@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1073</width>
+    <height>531</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTableWidget" name="randevu_table">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>130</y>
+     <width>721</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+    background: rgba(10,20,40,0.6);
+    color: #d6e0ff;
+    border: 1px solid #1f2a44;
+    border-radius: 10px;
+    gridline-color: #2a3c63;
+    font-size: 14px;
+    selection-background-color: #324f9e;
+    selection-color: white;
+}
+
+/* Header */
+QHeaderView::section {
+    background-color: #1f2a44;
+    color: #c7d2ff;
+    padding: 6px;
+    border: none;
+    font-weight: bold;
+}
+
+/* Alternating row colors */
+QTableWidget::item {
+    background-color: #111b31;
+}
+
+QTableWidget::item:alternate {
+    background-color: #16223d;
+}
+
+/* Selected row */
+QTableWidget::item:selected {
+    background-color: #3f63c8;
+    color: white;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="adsoyad_line">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>180</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background: rgba(10,20,40,0.6);
+    color: #e8eeff;
+    border: 1px solid #1f2a44;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #3f63c8;
+    background: rgba(20,30,60,0.8);
+}
+
+QLineEdit::placeholder {
+    color: #aab7e8;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tc_line">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>280</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background: rgba(10,20,40,0.6);
+    color: #e8eeff;
+    border: 1px solid #1f2a44;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #3f63c8;
+    background: rgba(20,30,60,0.8);
+}
+
+QLineEdit::placeholder {
+    color: #aab7e8;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="tarih_edit">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>440</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit {
+    background: rgba(10,20,40,0.6);
+    color: #e8eeff;
+    border: 1px solid #1f2a44;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+QDateEdit:focus {
+    border: 1px solid #3f63c8;
+}
+
+QDateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: right;
+    width: 20px;
+    border-left: 1px solid #1f2a44;
+}
+
+QDateEdit::down-arrow {
+    width: 12px;
+    height: 12px;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QTimeEdit" name="saat_edit">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>440</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTimeEdit {
+    background: rgba(10,20,40,0.6);
+    color: #e8eeff;
+    border: 1px solid #1f2a44;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+QTimeEdit:focus {
+    border: 1px solid #3f63c8;
+}
+
+QTimeEdit::up-button,
+QTimeEdit::down-button {
+    background: transparent;
+    border: none;
+}
+
+QTimeEdit::up-arrow,
+QTimeEdit::down-arrow {
+    width: 10px;
+    height: 10px;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="guncelle_button">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>340</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background: qlineargradient(
+        x1:0 y1:0,
+        x2:1 y2:1,
+        stop:0 #2a3c63,
+        stop:1 #3f63c8
+    );
+    color: white;
+    border-radius: 10px;
+    padding: 8px 14px;
+    font-size: 14px;
+    border: 1px solid #324f9e;
+}
+
+QPushButton:hover {
+    background: qlineargradient(
+        x1:0 y1:0,
+        x2:1 y2:1,
+        stop:0 #3f63c8,
+        stop:1 #4f7fff
+    );
+}
+
+QPushButton:pressed {
+    background: #22345a;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Güncelle</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sil_button">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>400</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background: qlineargradient(
+        x1:0 y1:0,
+        x2:1 y2:1,
+        stop:0 #2a3c63,
+        stop:1 #3f63c8
+    );
+    color: white;
+    border-radius: 10px;
+    padding: 8px 14px;
+    font-size: 14px;
+    border: 1px solid #324f9e;
+}
+
+QPushButton:hover {
+    background: qlineargradient(
+        x1:0 y1:0,
+        x2:1 y2:1,
+        stop:0 #3f63c8,
+        stop:1 #4f7fff
+    );
+}
+
+QPushButton:pressed {
+    background: #22345a;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Sil</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>40</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #a8b7ff;
+    font-size: 20px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>RANDEVULAR</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>130</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #a8b7ff;
+    font-size: 20px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Hasta Adı Soyadı:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #a8b7ff;
+    font-size: 20px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Hasta TC:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>400</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #a8b7ff;
+    font-size: 20px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Randevu Tarihi:</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

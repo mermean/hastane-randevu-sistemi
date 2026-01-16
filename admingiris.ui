@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>714</width>
+    <height>359</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>40</y>
+     <width>581</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="hastane_button">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+    background-color: #3F5BD8;        /* soft mavi */
+    color: white;
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-size: 14px;
+    border: 1px solid rgba(255,255,255,0.08);
+    font-weight: 500;
+}
+
+QPushButton:hover{
+    background-color: #4E6CFF;        /* hover = biraz parlak */
+    border: 1px solid rgba(255,255,255,0.18);
+}
+
+QPushButton:pressed{
+    background-color: #344AC0;        /* basılı = biraz koyu */
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+QPushButton:disabled{
+    background-color: #2E3A6C;
+    color: #9AA4CC;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Hastane Ekle</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="poliklinik_button">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+    background-color: #3F5BD8;        /* soft mavi */
+    color: white;
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-size: 14px;
+    border: 1px solid rgba(255,255,255,0.08);
+    font-weight: 500;
+}
+
+QPushButton:hover{
+    background-color: #4E6CFF;        /* hover = biraz parlak */
+    border: 1px solid rgba(255,255,255,0.18);
+}
+
+QPushButton:pressed{
+    background-color: #344AC0;        /* basılı = biraz koyu */
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+QPushButton:disabled{
+    background-color: #2E3A6C;
+    color: #9AA4CC;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Poliklinik Ekle</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="doktor_button">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+    background-color: #3F5BD8;        /* soft mavi */
+    color: white;
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-size: 14px;
+    border: 1px solid rgba(255,255,255,0.08);
+    font-weight: 500;
+}
+
+QPushButton:hover{
+    background-color: #4E6CFF;        /* hover = biraz parlak */
+    border: 1px solid rgba(255,255,255,0.18);
+}
+
+QPushButton:pressed{
+    background-color: #344AC0;        /* basılı = biraz koyu */
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+QPushButton:disabled{
+    background-color: #2E3A6C;
+    color: #9AA4CC;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Doktor Ekle</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="randevu_button">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+    background-color: #3F5BD8;        /* soft mavi */
+    color: white;
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-size: 14px;
+    border: 1px solid rgba(255,255,255,0.08);
+    font-weight: 500;
+}
+
+QPushButton:hover{
+    background-color: #4E6CFF;        /* hover = biraz parlak */
+    border: 1px solid rgba(255,255,255,0.18);
+}
+
+QPushButton:pressed{
+    background-color: #344AC0;        /* basılı = biraz koyu */
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+QPushButton:disabled{
+    background-color: #2E3A6C;
+    color: #9AA4CC;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Randevular</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cikisyap">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+    background-color: #3F5BD8;        /* soft mavi */
+    color: white;
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-size: 14px;
+    border: 1px solid rgba(255,255,255,0.08);
+    font-weight: 500;
+}
+
+QPushButton:hover{
+    background-color: #4E6CFF;        /* hover = biraz parlak */
+    border: 1px solid rgba(255,255,255,0.18);
+}
+
+QPushButton:pressed{
+    background-color: #344AC0;        /* basılı = biraz koyu */
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+QPushButton:disabled{
+    background-color: #2E3A6C;
+    color: #9AA4CC;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>ÇIKIŞ YAP</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cikisyap</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>329</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>327</x>
+     <y>204</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
