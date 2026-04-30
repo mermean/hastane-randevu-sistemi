@@ -26,11 +26,10 @@ cd hastane-randevu-sistemi
 * MySQL servisinin çalışır durumda olması gerekmektedir
 * Uygulama ilk çalıştırıldığında gerekli veritabanı ve tablolar otomatik olarak oluşturulur
 
-Varsayılan veritabanı bilgileri kullanıcının şifre ve kullanıcı adına göre değişebilir. Proje içerisinden değiştirilmelidir.
 
 
-* Gerekirse bu bilgiler proje içerisinden değiştirilebilir
 
+* Varsayılan veritabanı bilgileri kullanıcının şifre ve kullanıcı adına göre değişebilir. Proje içerisinden değiştirilmelidir.
 ---
 
 ### Projenin Açılması
